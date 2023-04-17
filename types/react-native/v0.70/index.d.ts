@@ -8895,6 +8895,12 @@ export namespace Animated {
      * or calling `setValue`) will stop any previous ones.
      */
     export class Value extends AnimatedWithChildren {
+        
+        /**
+         * Directly get the value.  
+         */
+        _value: number;
+        
         constructor(value: number, config?: AnimatedConfig | null);
 
         /**
